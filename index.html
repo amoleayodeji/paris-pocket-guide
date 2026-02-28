@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini City Guide to Paris</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+        }
+        .accent-text {
+            color: #667eea;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+    <!-- Header -->
+    <header class="hero-gradient text-white py-16 shadow-lg">
+        <div class="max-w-6xl mx-auto px-6">
+            <h1 class="text-5xl font-bold mb-2">Paris</h1>
+            <p class="text-xl opacity-90">The City of Light</p>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="bg-white border-b border-slate-200 sticky top-0 shadow-sm">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex gap-8 overflow-x-auto">
+            <button onclick="scrollToSection('attractions')" class="text-slate-700 font-medium hover:accent-text transition whitespace-nowrap">Attractions</button>
+            <button onclick="scrollToSection('neighborhoods')" class="text-slate-700 font-medium hover:accent-text transition whitespace-nowrap">Neighborhoods</button>
+            <button onclick="scrollToSection('dining')" class="text-slate-700 font-medium hover:accent-text transition whitespace-nowrap">Dining</button>
+            <button onclick="scrollToSection('transport')" class="text-slate-700 font-medium hover:accent-text transition whitespace-nowrap">Getting Around</button>
+            <button onclick="scrollToSection('tips')" class="text-slate-700 font-medium hover:accent-text transition whitespace-nowrap">Travel Tips</button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="max-w-6xl mx-auto px-6 py-12">
+        <!-- Attractions Section -->
+        <section id="attractions" class="mb-16">
+            <h2 class="text-4xl font-bold mb-2">Top Attractions</h2>
+            <div class="w-16 h-1 bg-gradient-to-r from-blue-400 to-purple-500 mb-8 rounded"></div>
+            
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="card-hover bg-white p-6 rounded-lg border border-slate-200">
+                    <h3 class="text-2xl font-bold accent-text mb-2">Eiffel Tower</h3>
+                    <p class="text-slate-700 mb-4">The iconic iron lattice tower built in 1889. Visit the observation decks for stunning city views.</p>
+                    <p class="text-sm text-slate-600"><strong>Location:</strong> Champ de Mars, 5 Avenue Anatole France</p>
+                </div>
+
+                <div class="card-hover bg-white p-6 rounded-lg border border-slate-200">
+                    <h3 class="text-2xl font-bold accent-text mb-2">Louvre Museum</h3>
+                    <p class="text-slate-700 mb-4">Home to the Mona Lisa and world's largest art museum. Plan for multiple hours to explore.</p>
+                    <p class="text-sm text-slate-600"><strong>Location:</strong> Rue de Rivoli, 75001 Paris</p>
+                </div>
+
+                <div class="card-hover bg-white p-6 rounded-lg border border-slate-200">
+                    <h3 class="text-2xl font-bold accent-text mb-2">Notre-Dame</h3>
+                    <p class="text-slate-700 mb-4">Medieval Catholic cathedral with stunning Gothic architecture. Currently under restoration, but exterior still viewable.</p>
+                    <p class="text-sm text-slate-600"><strong>Location:</strong> Île de la Cité</p>
+                </div>
+
+                <div class="card-hover bg-white p-6 rounded-lg border border-slate-200">
+                    <h3 class="text-2xl font-bold accent-text mb-2">Arc de Triomphe</h3>
+                    <p class="text-slate-700 mb-4">Monumental arch honoring those who died in French wars. Climb to the top for panoramic views.</p>
+                    <p class="text-sm text-slate-600"><strong>Location:</strong> Place Charles de Gaulle, 75008</p>
+                </div>
+
+                <div class="card-hover bg-white p-6 rounded-lg border border-slate-200">
+                    <h3 class="text-2xl font-bold accent-text mb-2">Sacré-Cœur Basilica</h3>
+                    <p class="text-slate-700 mb-4">White Romano-Byzantine basilica perched atop Montmartre. Free to enter, stunning interiors and city views.</p>
+                    <p class="text-sm text-slate-600"><strong>Location:</strong> 35 Rue du Chevalier de la Barre, 75018</p>
+                </div>
+
+                <div class="card-hover bg-white p-6 rounded-lg border border-slate-200">
+                    <h3 class="text-2xl font-bold accent-text mb-2">Versailles Palace</h3>
+                    <p class="text-slate-700 mb-4">Lavish royal residence with opulent gardens and halls. Day trip from central Paris.</p>
+                    <p class="text-sm text-slate-600"><strong>Location:</strong> Yvelines, 30km west of Paris</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Neighborhoods Section -->
+        <section id="neighborhoods" class="mb-16">
+            <h2 class="text-4xl font-bold mb-2">Neighborhoods</h2>
+            <div class="w-16 h-1 bg-gradient-to-r from-blue-400 to-purple-500 mb-8 rounded"></div>
+            
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="card-hover bg-white p-6 rounded-lg border border-slate-200">
+                    <h3 class="text-2xl font-bold accent-text mb-2">Latin Quarter (5e)</h3>
+                    <p class="text-slate-700 mb-2">Heart of intellectual Paris with bookstores, cafés, and universities. Home to the Panthéon and Sorbonne.</p>
+                    <p class="text-sm text-slate-600">Best for: Students, history buffs, budget travelers</p>
+                </div>
+
+                <div class="card-hover bg-white p-6 rounded-lg border border-slate-200">
+                    <h3 class="text-2xl font-bold accent-text mb-2">Marais (4e)</h3>
+                    <p class="text-slate-700 mb-2">Vibrant neighborhood with galleries, boutiques, and historic mansions. Great nightlife and dining.</p>
+                    <p class="text-sm text-slate-600">Best for: Shopping, LGBTQ+ scene, trendy restaurants</p>
+                </div>
+
+                <div class="card-hover bg-white p-6 rounded-lg border border-slate-200">
+                    <h3 class="text-2xl font-bold accent-text mb-2">Montmartre (18e)</h3>
+                    <p class="text-slate-700 mb-2">Artistic hilltop neighborhood with bohemian charm. Site of Sacré-Cœur and artist studios.</p>
+                    <p class="text-sm text-slate-600">Best for: Art lovers, street artists, panoramic views</p>
+                </div>
+
+                <div class="card-hover bg-white p-6 rounded-lg border border-slate-200">
+                    <h3 class="text-2xl font-bold accent-text mb-2">Champs-Élysées (8e)</h3>
+                    <p class="text-slate-700 mb-2">Famous avenue with upscale shopping, cafés, and theaters. Connects Place de la Concorde to Arc de Triomphe.</p>
+                    <p class="text-sm text-slate-600">Best for: Luxury shopping, strolling, evening atmosphere</p>
+                </div>
+
+                <div class="card-hover bg-white p-6 rounded-lg border border-slate-200">
+                    <h3 class="text-2xl font-bold accent-text mb-2">Le Marais Côté Gauche (7e)</h3>
+                    <p class="text-slate-700 mb-2">Elegant left bank with museums, galleries, and literary cafés. Home to Musée d'Orsay and Eiffel Tower.</p>
+                    <p class="text-sm text-slate-600">Best for: Museum hopping, bourgeois charm, riverside walks</p>
+                </div>
+
+                <div class="card-hover bg-white p-6 rounded-lg border border-slate-200">
+                    <h3 class="text-2xl font-bold accent-text mb-2">Belleville (10e, 11e, 20e)</h3>
+                    <p class="text-slate-700 mb-2">Hip, multicultural neighborhood with street art, independent shops, and authentic local vibes.</p>
+                    <p class="text-sm text-slate-600">Best for: Street art, local food, hipster cafés, budget stays</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dining Section -->
+        <section id="dining" class="mb-16">
+            <h2 class="text-4xl font-bold mb-2">Dining & Cafés</h2>
+            <div class="w-16 h-1 bg-gradient-to-r from-blue-400 to-purple-500 mb-8 rounded"></div>
+            
+            <div class="bg-white rounded-lg p-8 border border-slate-200 mb-6">
+                <h3 class="text-2xl font-bold accent-text mb-4">Essential Parisian Experiences</h3>
+                <ul class="space-y-3 text-slate-700">
+                    <li><strong>Café Culture:</strong> Spend hours in a café with espresso and croissants. People-watching is part of the experience.</li>
+                    <li><strong>Bistros:</strong> Casual French restaurants serving classic dishes. Look for "Menu du Jour" (daily specials) for value.</li>
+                    <li><strong>Boulangeries:</strong> Fresh bread and pastries. Visit early morning for best selection.</li>
+                    <li><strong>Crêperies:</strong> Thin pancakes with sweet or savory fillings. Street vendors and small restaurants throughout the city.</li>
+                    <li><strong>Wine Bars:</strong> Sample French wines with charcuterie boards and small plates.</li>
+                </ul>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="card-hover bg-white p-6 rounded-lg border border-slate-200">
+                    <h4 class="font-bold accent-text mb-2">Budget-Friendly</h4>
+                    <ul class="text-slate-700 space-y-2 text-sm">
+                        <li>• Falafel in the Marais</li>
+                        <li>• Kebab stands</li>
+                        <li>• Market sandwiches</li>
+                        <li>• Café du matin</li>
+                        <li>• Picnic from boulangerie</li>
+                    </ul>
+                </div>
+
+                <div class="card-hover bg-white p-6 rounded-lg border border-slate-200">
+                    <h4 class="font-bold accent-text mb-2">Mid-Range</h4>
+                    <ul class="text-slate-700 space-y-2 text-sm">
+                        <li>• Traditional bistros</li>
+                        <li>• Café du Flore</li>
+                        <li>• Brasseries</li>
+                        <li>• Small wine bars</li>
+                        <li>• Neighborhood restaurants</li>
+                    </ul>
+                </div>
+
+                <div class="card-hover bg-white p-6 rounded-lg border border-slate-200">
+                    <h4 class="font-bold accent-text mb-2">Upscale</h4>
+                    <ul class="text-slate-700 space-y-2 text-sm">
+                        <li>• Michelin-starred dining</li>
+                        <li>• Fine dining restaurants</li>
+                        <li>• Seine river cruises</li>
+                        <li>• Rooftop dining</li>
+                        <li>• Cooking classes</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Getting Around Section -->
+        <section id="transport" class="mb-16">
+            <h2 class="text-4xl font-bold mb-2">Getting Around</h2>
+            <div class="w-16 h-1 bg-gradient-to-r from-blue-400 to-purple-500 mb-8 rounded"></div>
+            
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="card-hover bg-white p-6 rounded-lg border border-slate-200">
+                    <h3 class="text-xl font-bold accent-text mb-3">Metro (Subway)</h3>
+                    <p class="text-slate-700 mb-4">Fast, efficient, and the most popular transport. 16 lines covering the entire city.</p>
+                    <p class="text-sm text-slate-600"><strong>Cost:</strong> Single ticket €2.15 | 10-pack €16.90 | Day pass €8.45</p>
+                </div>
+
+                <div class="card-hover bg-white p-6 rounded-lg border border-slate-200">
+                    <h3 class="text-xl font-bold accent-text mb-3">Buses</h3>
+                    <p class="text-slate-700 mb-4">Scenic route option. Useful for traveling to outer neighborhoods and seeing the city.</p>
+                    <p class="text-sm text-slate-600"><strong>Cost:</strong> Same as Metro tickets. Night buses (Noctilien) available.</p>
+                </div>
+
+                <div class="card-hover bg-white p-6 rounded-lg border border-slate-200">
+                    <h3 class="text-xl font-bold accent-text mb-3">Vélib' (Bike Share)</h3>
+                    <p class="text-slate-700 mb-4">Thousands of bikes at stations throughout Paris. Great for short trips and exploring.</p>
+                    <p class="text-sm text-slate-600"><strong>Cost:</strong> €5 day pass | €8 weekend pass</p>
+                </div>
+
+                <div class="card-hover bg-white p-6 rounded-lg border border-slate-200">
+                    <h3 class="text-xl font-bold accent-text mb-3">Taxis & Ride-share</h3>
+                    <p class="text-slate-700 mb-4">Taxis can be pricey. Uber and local apps available but not significantly cheaper.</p>
+                    <p class="text-sm text-slate-600"><strong>Cost:</strong> €5+ base fare | Uber comparable rates</p>
+                </div>
+
+                <div class="card-hover bg-white p-6 rounded-lg border border-slate-200">
+                    <h3 class="text-xl font-bold accent-text mb-3">Walking</h3>
+                    <p class="text-slate-700 mb-4">Paris is wonderfully walkable. Comfortable shoes essential. Many neighborhoods are best explored on foot.</p>
+                    <p class="text-sm text-slate-600"><strong>Best for:</strong> Discovering hidden gems and street-level atmosphere</p>
+                </div>
+
+                <div class="card-hover bg-white p-6 rounded-lg border border-slate-200">
+                    <h3 class="text-xl font-bold accent-text mb-3">River Cruises</h3>
+                    <p class="text-slate-700 mb-4">Scenic boat tours along the Seine. Bateaux-Mouches and Vedettes de Paris are popular operators.</p>
+                    <p class="text-sm text-slate-600"><strong>Cost:</strong> €12-20 per person</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Travel Tips Section -->
+        <section id="tips" class="mb-16">
+            <h2 class="text-4xl font-bold mb-2">Travel Tips</h2>
+            <div class="w-16 h-1 bg-gradient-to-r from-blue-400 to-purple-500 mb-8 rounded"></div>
+            
+            <div class="bg-gradient-to-br from-blue-50 to-purple-50 rounded-lg p-8 border border-slate-200 mb-6">
+                <h3 class="text-2xl font-bold accent-text mb-4">Practical Information</h3>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <h4 class="font-bold text-slate-900 mb-2">⏰ When to Visit</h4>
+                        <p class="text-slate-700 text-sm mb-4">Spring (April-May) and Fall (September-October) offer pleasant weather and fewer crowds. Summer is peak season with higher prices and more tourists.</p>
+
+                        <h4 class="font-bold text-slate-900 mb-2">💶 Currency & Costs</h4>
+                        <p class="text-slate-700 text-sm mb-4">Euro (€) is the currency. Paris is expensive: budget €50-100 daily for accommodation, €10-20 for meals, €2-3 for transport.</p>
+                    </div>
+
+                    <div>
+                        <h4 class="font-bold text-slate-900 mb-2">🗣 Language</h4>
+                        <p class="text-slate-700 text-sm mb-4">French is the main language. English is spoken in tourist areas and hotels, but learning basic phrases is appreciated and helpful.</p>
+
+                        <h4 class="font-bold text-slate-900 mb-2">📱 Connectivity</h4>
+                        <p class="text-slate-700 text-sm mb-4">Free WiFi available in cafés and hotels. Buy a European SIM card or use roaming plan for mobile data.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-white p-6 rounded-lg border border-slate-200">
+                    <h3 class="text-xl font-bold accent-text mb-4">Do's ✓</h3>
+                    <ul class="space-y-2 text-slate-700 text-sm">
+                        <li>✓ Say "Bonjour" when entering shops</li>
+                        <li>✓ Dress smartly; Paris is fashion-conscious</li>
+                        <li>✓ Carry a reusable water bottle (fountains are common)</li>
+                        <li>✓ Make reservations for popular restaurants</li>
+                        <li>✓ Respect smoking areas and local customs</li>
+                        <li>✓ Tip with small change (5-10%) for good service</li>
+                        <li>✓ Buy a Museum Pass for multiple attractions</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg border border-slate-200">
+                    <h3 class="text-xl font-bold accent-text mb-4">Don'ts ✗</h3>
+                    <ul class="space-y-2 text-slate-700 text-sm">
+                        <li>✗ Don't speak loudly in public spaces</li>
+                        <li>✗ Don't leave valuables unattended</li>
+                        <li>✗ Don't eat while walking (sit and enjoy)</li>
+                        <li>✗ Don't wear athletic wear as everyday clothing</li>
+                        <li>✗ Don't avoid eye contact with locals</li>
+                        <li>✗ Don't expect shops open on Sundays (outside tourist areas)</li>
+                        <li>✗ Don't assume credit cards everywhere (bring cash)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg border border-slate-200 mt-6">
+                <h3 class="text-xl font-bold accent-text mb-4">Safety & Health</h3>
+                <ul class="space-y-2 text-slate-700 text-sm">
+                    <li><strong>Health Insurance:</strong> EU citizens have reciprocal healthcare. Others should get travel insurance.</li>
+                    <li><strong>Pharmacies:</strong> Easily found (green cross). Staff are knowledgeable about common ailments.</li>
+                    <li><strong>Pickpocketing:</strong> Common in crowded areas and on public transit. Keep belongings secure.</li>
+                    <li><strong>Emergency Numbers:</strong> 112 (general), 15 (ambulance), 17 (police), 18 (fire)</li>
+                    <li><strong>Water:</strong> Tap water is safe and high-quality throughout Paris.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="mt-20 pt-12 border-t border-slate-200">
+            <div class="text-center text-slate-600 text-sm">
+                <p class="mb-2">Paris awaits! Plan your visit, embrace the culture, and create unforgettable memories.</p>
+                <p>Last updated: 2026</p>
+            </div>
+        </footer>
+    </main>
+
+    <script>
+        function scrollToSection(id) {
+            const element = document.getElementById(id);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    </script>
+</body>
+</html>
